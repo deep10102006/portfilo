@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer {
+  .box {
+    @apply p-1 md:px-3 md:py-2 lg:px-3 lg:py-2 backdrop-blur-md cursor-pointer;
+  }
+}
+
+i {
+  font-size: 30px;
+  color: white;
+}
+
+.de {
+  color: black;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(./assets/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(./assets//LexendDeca-VariableFont_wght.ttf);
+}
+

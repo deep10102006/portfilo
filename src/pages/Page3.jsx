@@ -1,0 +1,103 @@
+import React from "react";
+import { useEffect } from "react";
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+function Page3() {
+  useEffect(() => {
+    gsap.to(".text",{
+        opacity:1,
+        y:10,
+    })
+    }, [])
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "1fe81875-c69a-4713-aae1-626ab9b7d98a");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
+
+  return (
+    <div id="contact" className="mt-32 ">
+      <div className="">
+        <h1 className='text opacity-0 text-white text-5xl md:text-7xl lg:text-8xl text-center lg:text-start mt-8 lg:my-3 font-bold'>LET'S WORK <span className='text-white/55'>TOGETHER</span></h1>
+      </div>
+      <div className="flex items-center justify-center lg:justify-start">
+        <form
+          onSubmit={onSubmit}
+          className="w-full max-w-lg p-8 space-y-6 text-white rounded-lg "
+        >
+          <div>
+            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-600">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+              className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-600">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+              className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-600">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter Your Message"
+              required
+              className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              rows="4"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="flex items-center justify-center gap-3 w-full px-4 py-2 bg-[#6D34FD] text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Send Message
+            <i class='  bx bx-send'></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  );
+}
+
+export default Page3;
+
