@@ -1,35 +1,40 @@
 import React from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 function Page3() {
+  const notify = () => toast(result);
   useEffect(() => {
-    gsap.to(".text",{
-        opacity:1,
-        y:10,
+    gsap.to(".text", {
+      opacity: 1,
+      y: 10,
     })
-    }, [])
+  }, [])
+  const [result, setResult] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "1fe81875-c69a-4713-aae1-626ab9b7d98a");
+    formData.append("access_key", '1fe81875-c69a-4713-aae1-626ab9b7d98a'
+    );
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+      body: formData
+    });
 
-    if (res.success) {
-      console.log("Success", res);
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      // alert(result)
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
     }
   };
 
@@ -86,12 +91,14 @@ function Page3() {
           </div>
 
           <button
+            onClick={notify}
             type="submit"
             className="flex items-center justify-center gap-3 w-full px-4 py-2 bg-[#6D34FD] text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             Send Message
-            <i class='  bx bx-send'></i>
+            <i class=' bx bx-send'></i>
           </button>
+          <ToastContainer />
         </form>
       </div>
     </div>
