@@ -1,5 +1,4 @@
 
-import { Link } from 'react-router-dom'
 import pro1 from '../assets/caht.png'
 import pro2 from '../assets/images (1).webp'
 import pro3 from '../assets/images.webp'

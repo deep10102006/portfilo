@@ -1,17 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
 function Page3() {
   const notify = () => toast(result);
-  useEffect(() => {
-    gsap.to(".text", {
-      opacity: 1,
-      y: 10,
-    })
-  }, [])
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -41,7 +32,7 @@ function Page3() {
   return (
     <div id="contact" className="bg-[#000000]">
       <div className="mt-6">
-        <h1 className='text opacity-0 text-white text-4xl text-center font-bold'>How can I help you?</h1>
+        <h1 className=' text-white text-4xl text-center font-bold'>How can I help you?</h1>
         <p className='mt-3 text-center text-white text-md'>Got a project or collaborationin mind? Reach out, and I’ll  <br /> get back to you soon!</p>
       </div>
       <div className="flex items-center justify-center  ">

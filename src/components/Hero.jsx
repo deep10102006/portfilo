@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import bg2 from '../assets/bg2.png'
 const Hero = () => {
 
   return (
     <div id='home' className=' p-5 flex flex-col justify-center items-center lg:border-none md:border border-white/15  border '>
-      <img src={bg2} className='absolute h-[330px] w-[320px] lg:w-[698px] lg:h-[310px] z-10' alt="" />
       <div className="text-white">
         <p>🖐️ Hello I am,</p>
       </div>

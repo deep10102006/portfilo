@@ -15,7 +15,7 @@ const Page4 = () => {
             <div className="text-center text-white  text-xl p-4">
                 <p>Front-end developer </p>
             </div>
-            <div className="flex justify-center w-[320px] lg:w-[700px] text-white text-sm ">
+            <div className="flex justify-center w-[320px] md:w-[520px] lg:w-[700px] text-white text-sm  ">
                 <div className="w-[200px] flex flex-col items-center p-4">
                     <p>Call me on:</p>
                     <p>9564595940</p>
