@@ -39,11 +39,12 @@ function Page3() {
   };
 
   return (
-    <div id="contact" className="mt-32 ">
-      <div className="">
-        <h1 className='text opacity-0 text-white text-5xl md:text-7xl lg:text-8xl text-center lg:text-start mt-8 lg:my-3 font-bold'>LET'S WORK <span className='text-white/55'>TOGETHER</span></h1>
+    <div id="contact" className="bg-[#000000]">
+      <div className="mt-6">
+        <h1 className='text opacity-0 text-white text-4xl text-center font-bold'>How can I help you?</h1>
+        <p className='mt-3 text-center text-white text-md'>Got a project or collaborationin mind? Reach out, and I’ll  <br /> get back to you soon!</p>
       </div>
-      <div className="flex items-center justify-center lg:justify-start">
+      <div className="flex items-center justify-center  ">
         <form
           onSubmit={onSubmit}
           className="w-full max-w-lg p-8 space-y-6 text-white rounded-lg "
@@ -93,10 +94,10 @@ function Page3() {
           <button
             onClick={notify}
             type="submit"
-            className="flex items-center justify-center gap-3 w-full px-4 py-2 bg-[#6D34FD] text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className=" px-5 py-3 w-full gap-4 flex justify-center items-center bg-linear-to-r from-[#C0D6EF] to-[#778B9F]  text-black rounded-md cursor-pointer hover:shadow-md shadow-white/20"
           >
             Send Message
-            <i class=' bx bx-send'></i>
+            <i class='de bx bx-send'></i>
           </button>
           <ToastContainer />
         </form>
