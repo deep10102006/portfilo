@@ -29,10 +29,6 @@ const Home = () => {
                     <div className='bg-linear-to-r from-[#181818] via-[#6c6c6c] to-[#181818] lg:w-[800px] h-[1px] '></div>
                     <Page3 />
                 </div>
-                <div className="border-x border-white/15 w-[320px] md:w-[520px] lg:w-[700px] flex flex-col items-center">
-                    <div className='bg-linear-to-r from-[#181818] via-[#6c6c6c] to-[#181818] lg:w-[800px] h-[1px] '></div>
-                    <Client />
-                </div>
                 <div className="lg:border-x border-white/15 w-[320px] md:w-[520px] lg:w-[700px] flex flex-col items-center mb-10">
                     <div className='bg-linear-to-r from-[#181818] via-[#6c6c6c] to-[#181818] lg:w-[800px] h-[1px] '></div>
                     <Page4 />

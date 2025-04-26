@@ -14,7 +14,7 @@ const Hero = () => {
         <p className='mt-3 text-white text-xl'>'Passionate Frontend Developer Specializing in Modern Web Technologies.'</p>
       </div>
       <Link
-        to="contact"
+        to="contactus"
         spy={true}
         smooth={true}
         offset={70}

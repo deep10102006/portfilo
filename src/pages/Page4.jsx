@@ -3,7 +3,7 @@ import me from '../assets/me.jpg'
 import bg2 from '../assets/bg2.png'
 const Page4 = () => {
     return (
-        <div className='flex flex-col justify-center border border-white/15 lg:border-none w-[320px] md:w-[520px] lg:w-[700px]'>
+        <div id='contactus' className='flex flex-col justify-center border border-white/15 lg:border-none w-[320px] md:w-[520px] lg:w-[700px]'>
             <img src={bg2} className='absolute md:left-[16%] lg:left-[24%] h-[370px] lg:h-[430px] w-[310px] md:w-[520px] lg:w-[695px]' alt="" />
             <div className="flex justify-center mt-10 ">
                 <div className="h-10 w-10 lg:h-28 lg:w-28 border border-white rounded-full ">
