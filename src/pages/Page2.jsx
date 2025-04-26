@@ -53,7 +53,7 @@ const Page2 = () => {
           }
       ]
   return (
-    <div id='project' className='p-5 text-white border border-white/15 bg-[#000000]'>
+    <div id='project' className='p-5 text-white w-[320px] md:w-[520px] lg:w-[700px] border border-white/15 bg-[#000000]'>
       <div className="mt-10">
         <h1 className='text-white text-4xl text-center mt-8 lg:mt-3 font-bold'>Showcasing my <br /> best work</h1>
       </div>

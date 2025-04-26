@@ -9,7 +9,7 @@ import { Link } from 'react-scroll'
 const Navbar = () => {
     return (
         <>
-            <div className='bg-gradient-to-b from-[#27292D] to-[black] w-full text-white p-3'>
+            <div className='bg-gradient-to-b from-[#27292D] to-[black] w-full  text-white p-3'>
                 <img src={bg} className='absolute right-0 md:left-40 lg:left-[35%] top-15 ' alt="" />
                 <div className="z-10 flex items-center justify-between h-20">
                     <div className="flex gap-3">

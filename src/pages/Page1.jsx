@@ -8,8 +8,6 @@ const Page1 = () => {
 
     return (
         <>
-
-
             <div id='about' className='flex flex-col items-center '>
                 <img src={bg} className='absolute' alt="" />
                 <div className="flex justify-center mt-10 ">
@@ -23,7 +21,7 @@ const Page1 = () => {
                     <p>Front-end developer skilled in HTML, CSS, JavaScript, React, and Tailwind CSS. Focused on building responsive, user-friendly interfaces with clean, efficient code. Experienced in developing high-quality websites and passionate about creating scalable, performant solutions.</p>
                 </div>
                 <div className='flex justify-center items-center p-4 gap-5'>
-                    <button className='px-8 py-6 lg:px-5 lg:py-3 bg-linear-to-r from-[#C0D6EF] to-[#778B9F]  text-black rounded-md cursor-pointer hover:shadow-md shadow-white/20'>
+                    <button className='px-8 py-6 md:px-5 md:py-3 lg:px-5 lg:py-3 bg-linear-to-r from-[#C0D6EF] to-[#778B9F]  text-black rounded-md cursor-pointer hover:shadow-md shadow-white/20'>
                         <a className='flex gap-3' href={cv}>Resume <img src={re} className='h-6' alt="" /></a>
                     </button>
                     <Link
@@ -53,7 +51,6 @@ const Page1 = () => {
                 <img src={bg} alt="" className='rotate-180 ' />
             </div>
         </>
-
     )
 }
 
