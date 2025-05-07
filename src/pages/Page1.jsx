@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../assets/deep cv.pdf'
+import cv from '../assets/deep Resume.pdf'
 import me from '../assets/me.jpg'
 import re from '../assets/re.svg'
 import bg from '../assets/bg.png'
