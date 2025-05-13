@@ -6,51 +6,58 @@ import pro4 from '../assets/medisio.png'
 import pro5 from '../assets/codeeditor.png'
 import pro6 from '../assets/passsaver.png'
 import pro7 from '../assets/collage.png'
+import pro8 from '../assets/download.png'
 const Page2 = () => {
   const projects = [
-          {
-              "image": pro1,
-              "title": "Chat app",
-              "description": "Realtime Chat app with React & Firebase",
-              "liveDemoLink": "https://chatapp-phi-gilt.vercel.app/"
-          },
-          {
-              "image": pro2,
-              "title": "Ecommerce Website",
-              "description": "Responsive E-commerce (React & Tailwind)",
-              "liveDemoLink": "https://deeppcommerce.netlify.app/"
-          },
-          {
-              "image": pro3,
-              "title": "Landing Page",
-              "description": "Responsive React Landing Page",
-              "liveDemoLink": "https://deeplanding.netlify.app/"
-          },
-          {
-              "image": pro4,
-              "title": "Mediso Landing Page",
-              "description": "Mediso: A Healthcare Landing Page Design",
-              "liveDemoLink": "https://helath-landing-page.vercel.app/"
-          },
-          {
-              "image": pro5,
-              "title": "Code Editor",
-              "description": "Building a Web-Based Code Editor",
-              "liveDemoLink": "https://code-editor-nine-steel.vercel.app/"
-          },
-          {
-              "image": pro6,
-              "title": "Password Saver",
-              "description": "Secure Your Digital Life: Password Saver",
-              "liveDemoLink": "https://deep-alpha-eight.vercel.app/"
-          },
-          {
-              "image": pro7,
-              "title": "Collage Landing Page",
-              "description": "Crafting Engaging Visual Stories: The Collage Landing Page",
-              "liveDemoLink": "https://collage-bay-one.vercel.app/"
-          }
-      ]
+    {
+      "image": pro1,
+      "title": "Chat app",
+      "description": "Realtime Chat app with React & Firebase",
+      "liveDemoLink": "https://chatapp-phi-gilt.vercel.app/"
+    },
+    {
+      "image": pro8,
+      "title": "News app",
+      "description": "News app with React & Tailwind css",
+      "liveDemoLink": "https://news-app-two-jade.vercel.app/"
+    },
+    {
+      "image": pro2,
+      "title": "Ecommerce Website",
+      "description": "Responsive E-commerce (React & Tailwind)",
+      "liveDemoLink": "https://deeppcommerce.netlify.app/"
+    },
+    {
+      "image": pro3,
+      "title": "Landing Page",
+      "description": "Responsive React Landing Page",
+      "liveDemoLink": "https://deeplanding.netlify.app/"
+    },
+    {
+      "image": pro4,
+      "title": "Mediso Landing Page",
+      "description": "Mediso: A Healthcare Landing Page Design",
+      "liveDemoLink": "https://helath-landing-page.vercel.app/"
+    },
+    {
+      "image": pro5,
+      "title": "Code Editor",
+      "description": "Building a Web-Based Code Editor",
+      "liveDemoLink": "https://code-editor-nine-steel.vercel.app/"
+    },
+    {
+      "image": pro6,
+      "title": "Password Saver",
+      "description": "Secure Your Digital Life: Password Saver",
+      "liveDemoLink": "https://deep-alpha-eight.vercel.app/"
+    },
+    {
+      "image": pro7,
+      "title": "Collage Landing Page",
+      "description": "Crafting Engaging Visual Stories: The Collage Landing Page",
+      "liveDemoLink": "https://collage-bay-one.vercel.app/"
+    }
+  ]
   return (
     <div id='project' className='p-5 text-white w-[320px] md:w-[520px] lg:w-[700px] border border-white/15 bg-[#000000]'>
       <div className="mt-10">
